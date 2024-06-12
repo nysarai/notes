@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0%;
+    }
+    h1{
+        color:brown;
+        
+    }
+</style>
+<body>
+    <h1 id="name">hello world</h1>
+    <button onclick="sayHello()">CLICK ME</button>
+
+    <script>
+        //this is how we comment 
+        console.log("Hello World!");
+       
+        let x=0;  //variable ho, you can change it
+        const y=0;  //unchangable value
+
+        x=10;
+        console.log(x);
+
+        let a=20;
+        let b=2;
+        console.log(a-b);
+        console.log(a+b);
+        console.log(a/b);
+        console.log(a*b);
+
+        let m = true;
+        //to print its data type
+        console.log(typeof m);
+
+        function test(){
+            console.log("nysasyn");
+        }
+        test();
+
+        function add(n1,n2){
+            console.log(n1+n2);
+        }
+        add(10,100);
+
+        function sub(n1, n2){
+            console.log(n1-n2);
+        }
+        sub(10,4);
+        
+        
+        function name(x){
+            console.log(x);
+            }
+            name("Nysa");
+            
+            
+            function sayHello(){
+                //console.log("Welcome or welcome back to my youtube channel");
+                //name.textContent = "Nysa"
+                const name = document.getElementById("name");
+                        console.log(name);
+                        name.innerHTML ="nysa";
+                
+        }
+    </script>
+</body>
+</html>
